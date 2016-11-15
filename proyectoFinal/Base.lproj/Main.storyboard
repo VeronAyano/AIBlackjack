@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="teR-VN-ipc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -7,6 +7,53 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="0hQ-Gj-a6F">
+            <objects>
+                <viewController id="teR-VN-ipc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q56-Zg-ZVf"/>
+                        <viewControllerLayoutGuide type="bottom" id="GD4-oI-Jfr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iyu-a3-DCd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BlackJack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofp-yf-Xds">
+                                <frame key="frameInset" minX="101" minY="54" width="173" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="jOJ-E4-x6A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <color key="textColor" red="0.80171227331606221" green="0.057310743980182176" blue="0.077468454440669715" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N9f-uF-Afe"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2i-TR-OWc">
+                                <frame key="frameInset" minX="135" minY="459" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Press To Start"/>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="bwJ-rj-zav"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ofp-yf-Xds" firstAttribute="top" secondItem="q56-Zg-ZVf" secondAttribute="bottom" constant="34" id="KG3-he-M5m"/>
+                            <constraint firstItem="Ofp-yf-Xds" firstAttribute="leading" secondItem="iyu-a3-DCd" secondAttribute="leadingMargin" constant="85" id="OpS-tz-zH2"/>
+                            <constraint firstItem="GD4-oI-Jfr" firstAttribute="top" secondItem="N9f-uF-Afe" secondAttribute="bottom" constant="267" id="bmv-2D-ARu"/>
+                            <constraint firstItem="N9f-uF-Afe" firstAttribute="top" secondItem="Ofp-yf-Xds" secondAttribute="bottom" constant="45" id="ggA-Tb-Qww"/>
+                            <constraint firstItem="Ofp-yf-Xds" firstAttribute="centerX" secondItem="iyu-a3-DCd" secondAttribute="centerX" id="lVE-bA-WW4"/>
+                            <constraint firstItem="N9f-uF-Afe" firstAttribute="leading" secondItem="iyu-a3-DCd" secondAttribute="leadingMargin" constant="47" id="tLR-TR-iVj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="N9f-uF-Afe" secondAttribute="trailing" constant="56" id="yH8-Qn-Pwe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="486-CO-LZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-783.20000000000005" y="-0.44977511244377816"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -40,7 +87,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gNY-Yq-K0S" id="LtT-ky-AFS">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -69,7 +116,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lXa-Cr-tlP" id="yIz-Wt-g1z">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -115,7 +162,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bd2-Lc-9hN" id="G8J-Xe-GVB">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
