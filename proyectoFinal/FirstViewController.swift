@@ -9,10 +9,13 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    @IBOutlet var Photo: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
+        self.Photo.image = UIImage(named: "BJ")
     }
 
     override func didReceiveMemoryWarning() {

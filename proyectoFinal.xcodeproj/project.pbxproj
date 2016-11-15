@@ -18,6 +18,7 @@
 		7F7DDC891DD2B309001033FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7DDC871DD2B309001033FF /* LaunchScreen.storyboard */; };
 		7F7DDC941DD2B309001033FF /* proyectoFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7DDC931DD2B309001033FF /* proyectoFinalTests.swift */; };
 		AF78B7651DDB8AD600BBFA37 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF78B7641DDB8AD600BBFA37 /* MenuViewController.swift */; };
+		AF78B7671DDB8E3100BBFA37 /* BJ.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AF78B7661DDB8E3100BBFA37 /* BJ.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		7F7DDC931DD2B309001033FF /* proyectoFinalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proyectoFinalTests.swift; sourceTree = "<group>"; };
 		7F7DDC951DD2B309001033FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF78B7641DDB8AD600BBFA37 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		AF78B7661DDB8E3100BBFA37 /* BJ.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BJ.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		7F7DDC7B1DD2B308001033FF /* proyectoFinal */ = {
 			isa = PBXGroup;
 			children = (
+				AF78B7661DDB8E3100BBFA37 /* BJ.jpeg */,
 				7F7DDC7C1DD2B308001033FF /* AppDelegate.swift */,
 				AF78B7641DDB8AD600BBFA37 /* MenuViewController.swift */,
 				7F7DDC7E1DD2B308001033FF /* FirstViewController.swift */,
@@ -197,6 +200,7 @@
 				7F7DDC891DD2B309001033FF /* LaunchScreen.storyboard in Resources */,
 				7F7DDC861DD2B309001033FF /* Assets.xcassets in Resources */,
 				7F7DDC841DD2B308001033FF /* Main.storyboard in Resources */,
+				AF78B7671DDB8E3100BBFA37 /* BJ.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
