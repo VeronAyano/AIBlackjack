@@ -9,7 +9,7 @@
 import UIKit
 
 class Card: NSObject {
-    
+    // Hola
     let name : String
     let value : Int
     let defValue = 1
