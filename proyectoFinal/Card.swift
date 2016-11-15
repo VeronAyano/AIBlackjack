@@ -10,6 +10,7 @@ import UIKit
 
 class Card: NSObject {
     // Hola
+    //Ya entendi esto de GitHub :3
     let name : String
     let value : Int
     let defValue = 1
