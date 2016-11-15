@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F7281021DD9F8D90015715F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7281011DD9F8D90015715F /* Card.swift */; };
+		7F7281041DD9FD340015715F /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7281031DD9FD340015715F /* State.swift */; };
+		7F7281061DDA05B00015715F /* PvPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7281051DDA05B00015715F /* PvPViewController.swift */; };
 		7F7DDC7D1DD2B308001033FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7DDC7C1DD2B308001033FF /* AppDelegate.swift */; };
 		7F7DDC7F1DD2B308001033FF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7DDC7E1DD2B308001033FF /* FirstViewController.swift */; };
 		7F7DDC811DD2B308001033FF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7DDC801DD2B308001033FF /* SecondViewController.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F7281011DD9F8D90015715F /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		7F7281031DD9FD340015715F /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		7F7281051DDA05B00015715F /* PvPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PvPViewController.swift; sourceTree = "<group>"; };
 		7F7DDC791DD2B308001033FF /* proyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7DDC7C1DD2B308001033FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F7DDC7E1DD2B308001033FF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +92,9 @@
 				7F7DDC851DD2B308001033FF /* Assets.xcassets */,
 				7F7DDC871DD2B309001033FF /* LaunchScreen.storyboard */,
 				7F7DDC8A1DD2B309001033FF /* Info.plist */,
+				7F7281011DD9F8D90015715F /* Card.swift */,
+				7F7281031DD9FD340015715F /* State.swift */,
+				7F7281051DDA05B00015715F /* PvPViewController.swift */,
 			);
 			path = proyectoFinal;
 			sourceTree = "<group>";
@@ -203,8 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F7DDC811DD2B308001033FF /* SecondViewController.swift in Sources */,
+				7F7281061DDA05B00015715F /* PvPViewController.swift in Sources */,
 				7F7DDC7D1DD2B308001033FF /* AppDelegate.swift in Sources */,
 				7F7DDC7F1DD2B308001033FF /* FirstViewController.swift in Sources */,
+				7F7281041DD9FD340015715F /* State.swift in Sources */,
+				7F7281021DD9F8D90015715F /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +422,7 @@
 				7F7DDC9A1DD2B309001033FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F7DDC9B1DD2B309001033FF /* Build configuration list for PBXNativeTarget "proyectoFinalTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +431,7 @@
 				7F7DDC9D1DD2B309001033FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
