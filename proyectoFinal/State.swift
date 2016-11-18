@@ -60,6 +60,7 @@ class State: NSObject {
     
     func getProbabilities() {
         var maxCards = 0.0
+        var totalProb = 0.0
         for i in 0...9{
             if i == 9{ //Si se trata de cartas con valor de 10...
                 maxCards = 16.0 //Se define que hay 16 en total en un Deck comun.
@@ -68,9 +69,13 @@ class State: NSObject {
                 maxCards = 4.0 //De las demàs, hay 4 por deck.
             }
             let cardsPlayed = Double(numbersPlayed[i+1]) //Halla la cantidad de cartas de cada valor que no se han jugado...
-            probabilityArray[i] = (maxCards - cardsPlayed)/Double(deckSize) //Y halla las probabilidades de sacar una carta de ese valor.
+            //print(cardsPlayed)
+            //print(deckSize)
+            probabilityArray[i] = (maxCards - cardsPlayed)/Double(deckSize + 1) //Y halla las probabilidades de sacar una carta de ese valor.
+            totalProb += probabilityArray[i]
         }
         print(probabilityArray)
+        print(totalProb)
     }
     
     func reset(){
@@ -87,7 +92,7 @@ class State: NSObject {
         heuristic = 0
     }
     
-    func getChildren(baseState:State) -> [State] {
+    /*func getChildren(baseState:State) -> [State] {
         var newState = baseState.copy() as! State
         newState.turn = !newState.turn
         var childStates = [State]()
@@ -109,5 +114,6 @@ class State: NSObject {
         newState.call()
         childStates.append(newState)
         return childStates
-    }
+    }*/
+    
 }
