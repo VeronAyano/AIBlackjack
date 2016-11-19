@@ -19,6 +19,9 @@
 		7F7DDC941DD2B309001033FF /* proyectoFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7DDC931DD2B309001033FF /* proyectoFinalTests.swift */; };
 		AF78B7651DDB8AD600BBFA37 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF78B7641DDB8AD600BBFA37 /* MenuViewController.swift */; };
 		AF78B7671DDB8E3100BBFA37 /* BJ.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AF78B7661DDB8E3100BBFA37 /* BJ.jpeg */; };
+		AF8307A61DDF7E5A0001781F /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8307A51DDF7E5A0001781F /* PlayerTableViewCell.swift */; };
+		AF8307A81DDF81BB0001781F /* PlayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8307A71DDF81BB0001781F /* PlayerTableViewController.swift */; };
+		AF8307AA1DDF83F90001781F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8307A91DDF83F90001781F /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		7F7DDC951DD2B309001033FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF78B7641DDB8AD600BBFA37 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		AF78B7661DDB8E3100BBFA37 /* BJ.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BJ.jpeg; sourceTree = "<group>"; };
+		AF8307A51DDF7E5A0001781F /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		AF8307A71DDF81BB0001781F /* PlayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerTableViewController.swift; path = ../PlayerTableViewController.swift; sourceTree = "<group>"; };
+		AF8307A91DDF83F90001781F /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 		7F7DDC7B1DD2B308001033FF /* proyectoFinal */ = {
 			isa = PBXGroup;
 			children = (
+				AF8307A71DDF81BB0001781F /* PlayerTableViewController.swift */,
 				AF78B7661DDB8E3100BBFA37 /* BJ.jpeg */,
 				7F7DDC7C1DD2B308001033FF /* AppDelegate.swift */,
 				AF78B7641DDB8AD600BBFA37 /* MenuViewController.swift */,
@@ -101,6 +108,8 @@
 				7F7281011DD9F8D90015715F /* Card.swift */,
 				7F7281031DD9FD340015715F /* State.swift */,
 				7F7281051DDA05B00015715F /* PvPViewController.swift */,
+				AF8307A51DDF7E5A0001781F /* PlayerTableViewCell.swift */,
+				AF8307A91DDF83F90001781F /* Player.swift */,
 			);
 			path = proyectoFinal;
 			sourceTree = "<group>";
@@ -222,9 +231,12 @@
 				7F7281061DDA05B00015715F /* PvPViewController.swift in Sources */,
 				7F7DDC7D1DD2B308001033FF /* AppDelegate.swift in Sources */,
 				AF78B7651DDB8AD600BBFA37 /* MenuViewController.swift in Sources */,
+				AF8307A61DDF7E5A0001781F /* PlayerTableViewCell.swift in Sources */,
 				7F7DDC7F1DD2B308001033FF /* FirstViewController.swift in Sources */,
 				7F7281041DD9FD340015715F /* State.swift in Sources */,
 				7F7281021DD9F8D90015715F /* Card.swift in Sources */,
+				AF8307AA1DDF83F90001781F /* Player.swift in Sources */,
+				AF8307A81DDF81BB0001781F /* PlayerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
