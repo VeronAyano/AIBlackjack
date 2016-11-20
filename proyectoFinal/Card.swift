@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Card: NSObject {
+class Card: NSObject, NSCopying {
     // Hola
     //Ya entendi esto de GitHub :3
     //Que bien, Eliezer!
@@ -123,6 +123,13 @@ class Card: NSObject {
     
     func switchVisibility(){
         visible = !visible
+    }
+    
+    //MARK: NSCopying
+    
+    func copy(with zone: NSZone? = nil) -> Any {
+        let newCard = Card(cardName: self.name, isVisible: self.visible)
+        return newCard
     }
 
 }

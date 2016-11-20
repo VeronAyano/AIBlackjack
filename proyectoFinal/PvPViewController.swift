@@ -38,6 +38,7 @@ class PvPViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         playerHandPicker.delegate = self
         opponentHandPicker.dataSource = self
         opponentHandPicker.delegate = self
+        
 
         // Do any additional setup after loading the view.
     }
@@ -293,6 +294,7 @@ class PvPViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         playerHandPicker.reloadAllComponents()
         opponentHandPicker.reloadAllComponents()
         printHeuristics()
+        minMax(state: estado)
     }
     
     @IBAction func hitPlayer(_ sender: UIButton) {
@@ -342,6 +344,33 @@ class PvPViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         else{
             opponentWins()
         }
+    }
+    
+    //MinMax Tree Testing
+    func minMax(state:State) {
+        let depth = 2
+        state.setChildrenNodes()
+        for i in 0...1 {
+            for n in state.children[i].children {
+                if i == 0 {
+                    n.setChildrenNodes()
+                    for j in 0...1 {
+                        for c in n.children[j].children {
+                            c.setNodeValue()
+                            print("D2, Value = \(c.minMaxValue)")
+                        }
+                        n.children[j].calculateValue()
+                        print("P2, Value = \(n.children[j].value)")
+                    }
+                }
+                n.setNodeValue()
+                print("D1, Value = \(n.minMaxValue)")
+            }
+            state.children[i].calculateValue()
+            print("P1, Value = \(state.children[i].value)")
+        }
+        state.setNodeValue()
+        print("D0, Value = \(state.minMaxValue)")
     }
     
 }
