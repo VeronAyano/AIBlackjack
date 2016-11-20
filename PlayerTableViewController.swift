@@ -50,6 +50,7 @@ class PlayerTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cellIdentifier = "PlayerTableViewCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellIdentifier", for: indexPath) as! PlayerTableViewCell
         
