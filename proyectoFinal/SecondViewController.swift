@@ -68,14 +68,14 @@ class SecondViewController: UIViewController, UITextFieldDelegate, UINavigationC
     /* Checar lo de cancel en Implement Edit and Delete Behavior*/
     @IBAction func cancel(_ sender: UIBarButtonItem) {
          self.dismiss(animated: true, completion: nil)
-        /*let isPresentingInAddMealMode = presentingViewController is UINavigationController
+        let isPresentingInAddPlayerMode = presentingViewController is UINavigationController
         
-        if isPresentingInAddMealMode {
-            dismissViewControllerAnimated(true, completion: nil)
+        if isPresentingInAddPlayerMode {
+            dismiss(animated: true, completion: nil)
         }
         else {
-            navigationController!.popViewControllerAnimated(true)
-        } */
+            navigationController!.popViewController(animated: true)
+        }
     }
     
     
