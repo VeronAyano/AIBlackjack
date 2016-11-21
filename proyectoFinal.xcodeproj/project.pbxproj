@@ -11,6 +11,8 @@
 		7F357D181DE13AA200A2D769 /* ProbabilisticNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F357D141DE13AA200A2D769 /* ProbabilisticNode.swift */; };
 		7F357D191DE13AA200A2D769 /* PvPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F357D151DE13AA200A2D769 /* PvPViewController.swift */; };
 		7F357D1A1DE13AA200A2D769 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F357D161DE13AA200A2D769 /* State.swift */; };
+		7F357D1C1DE35D2000A2D769 /* DifficultyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F357D1B1DE35D2000A2D769 /* DifficultyTableViewController.swift */; };
+		7F357D1E1DE38C1600A2D769 /* OrderSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F357D1D1DE38C1600A2D769 /* OrderSelectViewController.swift */; };
 		7F7DDC7D1DD2B308001033FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7DDC7C1DD2B308001033FF /* AppDelegate.swift */; };
 		7F7DDC7F1DD2B308001033FF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7DDC7E1DD2B308001033FF /* FirstViewController.swift */; };
 		7F7DDC811DD2B308001033FF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7DDC801DD2B308001033FF /* SecondViewController.swift */; };
@@ -40,6 +42,8 @@
 		7F357D141DE13AA200A2D769 /* ProbabilisticNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProbabilisticNode.swift; sourceTree = "<group>"; };
 		7F357D151DE13AA200A2D769 /* PvPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PvPViewController.swift; sourceTree = "<group>"; };
 		7F357D161DE13AA200A2D769 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		7F357D1B1DE35D2000A2D769 /* DifficultyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DifficultyTableViewController.swift; sourceTree = "<group>"; };
+		7F357D1D1DE38C1600A2D769 /* OrderSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSelectViewController.swift; sourceTree = "<group>"; };
 		7F7DDC791DD2B308001033FF /* proyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7DDC7C1DD2B308001033FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F7DDC7E1DD2B308001033FF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 				7F357D141DE13AA200A2D769 /* ProbabilisticNode.swift */,
 				7F357D151DE13AA200A2D769 /* PvPViewController.swift */,
 				7F357D161DE13AA200A2D769 /* State.swift */,
+				7F357D1B1DE35D2000A2D769 /* DifficultyTableViewController.swift */,
+				7F357D1D1DE38C1600A2D769 /* OrderSelectViewController.swift */,
 			);
 			path = proyectoFinal;
 			sourceTree = "<group>";
@@ -234,10 +240,12 @@
 				7F7DDC7D1DD2B308001033FF /* AppDelegate.swift in Sources */,
 				AF78B7651DDB8AD600BBFA37 /* MenuViewController.swift in Sources */,
 				7F357D1A1DE13AA200A2D769 /* State.swift in Sources */,
+				7F357D1E1DE38C1600A2D769 /* OrderSelectViewController.swift in Sources */,
 				7F357D181DE13AA200A2D769 /* ProbabilisticNode.swift in Sources */,
 				AF8307A61DDF7E5A0001781F /* PlayerTableViewCell.swift in Sources */,
 				7F7DDC7F1DD2B308001033FF /* FirstViewController.swift in Sources */,
 				AF8307AA1DDF83F90001781F /* Player.swift in Sources */,
+				7F357D1C1DE35D2000A2D769 /* DifficultyTableViewController.swift in Sources */,
 				AF8307A81DDF81BB0001781F /* PlayerTableViewController.swift in Sources */,
 				7F357D171DE13AA200A2D769 /* Card.swift in Sources */,
 				7F357D191DE13AA200A2D769 /* PvPViewController.swift in Sources */,
