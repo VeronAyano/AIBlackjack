@@ -85,14 +85,19 @@ class DifficultyTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
+        if segue.identifier == "toOrderSelect" {
+            let destination = segue.destination as! OrderSelectViewController
+            let indexPath = tableView.indexPath(for: sender as! UITableViewCell)!
+            destination.heuristic = indexPath.row
+        }
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }
