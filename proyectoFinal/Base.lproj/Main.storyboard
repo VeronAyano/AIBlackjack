@@ -100,18 +100,16 @@
                                     <frame key="frameInset" width="375" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bng-MH-s0P">
-                                            <frame key="frameInset" minX="25" minY="8" width="324" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bng-MH-s0P">
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="6jo-w0-hAA"/>
-                                                <constraint firstAttribute="width" constant="97" id="zNh-8S-Ro6"/>
+                                                <constraint firstAttribute="width" constant="324" id="zNh-8S-Ro6"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Saludos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ic4-3m-SJ1">
-                                            <frame key="frameInset" minX="25" minY="99" width="325" height="33"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saludos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ic4-3m-SJ1">
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="33" id="MWs-K0-4wM"/>
                                             </constraints>
@@ -119,8 +117,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lugar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnQ-rE-sjK">
-                                            <frame key="frameInset" minX="26" minY="53" width="324" height="23"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lugar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnQ-rE-sjK">
                                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -129,13 +126,13 @@
                                     <constraints>
                                         <constraint firstItem="bng-MH-s0P" firstAttribute="top" secondItem="LtT-ky-AFS" secondAttribute="topMargin" id="4X2-Fz-iuI"/>
                                         <constraint firstItem="Ic4-3m-SJ1" firstAttribute="centerX" secondItem="LtT-ky-AFS" secondAttribute="centerX" id="8R3-NR-gtv"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Ic4-3m-SJ1" secondAttribute="bottom" constant="40" id="IWR-L8-754"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Ic4-3m-SJ1" secondAttribute="bottom" constant="10" id="IWR-L8-754"/>
                                         <constraint firstItem="bng-MH-s0P" firstAttribute="leading" secondItem="LtT-ky-AFS" secondAttribute="leadingMargin" constant="17" id="Nnk-rK-tHC"/>
-                                        <constraint firstItem="bng-MH-s0P" firstAttribute="leading" secondItem="qnQ-rE-sjK" secondAttribute="leading" id="Rtl-bq-xCw"/>
-                                        <constraint firstItem="Ic4-3m-SJ1" firstAttribute="top" secondItem="qnQ-rE-sjK" secondAttribute="bottom" constant="8" symbolic="YES" id="SCU-Dg-VOo"/>
+                                        <constraint firstItem="bng-MH-s0P" firstAttribute="leading" secondItem="qnQ-rE-sjK" secondAttribute="leading" constant="-1" id="Rtl-bq-xCw"/>
+                                        <constraint firstItem="Ic4-3m-SJ1" firstAttribute="top" secondItem="qnQ-rE-sjK" secondAttribute="bottom" constant="23" id="SCU-Dg-VOo"/>
                                         <constraint firstItem="bng-MH-s0P" firstAttribute="leading" secondItem="Ic4-3m-SJ1" secondAttribute="leading" id="T4s-lY-hoO"/>
-                                        <constraint firstItem="bng-MH-s0P" firstAttribute="trailing" secondItem="qnQ-rE-sjK" secondAttribute="trailing" id="dOo-HE-YXQ"/>
-                                        <constraint firstItem="qnQ-rE-sjK" firstAttribute="top" secondItem="bng-MH-s0P" secondAttribute="bottom" constant="8" symbolic="YES" id="ilf-pb-nnb"/>
+                                        <constraint firstItem="bng-MH-s0P" firstAttribute="trailing" secondItem="qnQ-rE-sjK" secondAttribute="trailing" constant="-1" id="dOo-HE-YXQ"/>
+                                        <constraint firstItem="qnQ-rE-sjK" firstAttribute="top" secondItem="bng-MH-s0P" secondAttribute="bottom" constant="24" id="ilf-pb-nnb"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
