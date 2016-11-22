@@ -97,7 +97,7 @@
                                 <rect key="frame" x="0.0" y="122" width="375" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="gNY-Yq-K0S" id="LtT-ky-AFS">
-                                    <frame key="frameInset" width="375" height="150"/>
+                                    <frame key="frameInset" width="375" height="149"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bng-MH-s0P">
@@ -432,6 +432,9 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5z-Ui-FmG"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAU-Fw-ZVJ">
                                 <state key="normal" title="Go to Game"/>
+                                <connections>
+                                    <segue destination="agW-TW-6XS" kind="show" id="tUZ-Ol-vUK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -502,6 +505,83 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EWv-7P-ekb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2474" y="-1101"/>
+        </scene>
+        <!--vs CPU-->
+        <scene sceneID="1zJ-ZH-hRX">
+            <objects>
+                <viewController title="vs CPU" id="agW-TW-6XS" customClass="vsCPUViewController" customModule="proyectoFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7kY-A3-VOR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bo8-zn-Sww"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qyb-at-7ln">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uq0-eD-b1h">
+                                <frame key="frameInset" minX="27" minY="326" width="36" height="30"/>
+                                <state key="normal" title="PLAY"/>
+                                <connections>
+                                    <action selector="startGame:" destination="agW-TW-6XS" eventType="touchUpInside" id="s4U-8b-eT6"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="S49-Lh-Cgk">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGq-Vc-Rj1">
+                                        <state key="normal" title="HIT"/>
+                                        <connections>
+                                            <action selector="hitPlayer:" destination="agW-TW-6XS" eventType="touchUpInside" id="ccH-1e-Rsl"/>
+                                        </connections>
+                                    </button>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYE-Dp-AqH"/>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sW-zY-1fQ">
+                                <frame key="frameInset" minX="301" minY="326" width="46" height="30"/>
+                                <state key="normal" title="RESET"/>
+                                <connections>
+                                    <action selector="resetGame:" destination="agW-TW-6XS" eventType="touchUpInside" id="da3-8e-XpI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDm-2e-NoN">
+                                <frame key="frameInset" minX="164" minY="326" width="46" height="30"/>
+                                <state key="normal" title="CALL"/>
+                                <connections>
+                                    <action selector="call:" destination="agW-TW-6XS" eventType="touchUpInside" id="J5k-xi-KDR"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="vdc-h1-e71">
+                                <frame key="frameInset" minX="28" minY="64" width="320" height="216"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dse-RT-03H"/>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QDm-2e-NoN" firstAttribute="centerY" secondItem="qyb-at-7ln" secondAttribute="centerY" id="7xo-KS-zEf"/>
+                            <constraint firstItem="Uq0-eD-b1h" firstAttribute="centerY" secondItem="qyb-at-7ln" secondAttribute="centerY" id="9hF-PJ-SvH"/>
+                            <constraint firstItem="dse-RT-03H" firstAttribute="top" secondItem="7kY-A3-VOR" secondAttribute="bottom" constant="8" id="Arx-VU-IVd"/>
+                            <constraint firstItem="1sW-zY-1fQ" firstAttribute="centerY" secondItem="qyb-at-7ln" secondAttribute="centerY" id="BPD-bB-mTa"/>
+                            <constraint firstItem="1sW-zY-1fQ" firstAttribute="leading" secondItem="QDm-2e-NoN" secondAttribute="trailing" constant="91" id="ENa-as-yzQ"/>
+                            <constraint firstItem="Bo8-zn-Sww" firstAttribute="top" secondItem="S49-Lh-Cgk" secondAttribute="bottom" constant="8" id="ImY-RH-d3h"/>
+                            <constraint firstItem="S49-Lh-Cgk" firstAttribute="centerX" secondItem="qyb-at-7ln" secondAttribute="centerX" id="iKC-XK-v1y"/>
+                            <constraint firstItem="QDm-2e-NoN" firstAttribute="leading" secondItem="Uq0-eD-b1h" secondAttribute="trailing" constant="101" id="ifj-xd-fDu"/>
+                            <constraint firstItem="vdc-h1-e71" firstAttribute="centerX" secondItem="qyb-at-7ln" secondAttribute="centerX" id="lLW-Sf-EiL"/>
+                            <constraint firstItem="QDm-2e-NoN" firstAttribute="centerX" secondItem="qyb-at-7ln" secondAttribute="centerX" id="od1-bT-d1N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="callButton" destination="QDm-2e-NoN" id="LID-vt-hIj"/>
+                        <outlet property="hitButton" destination="WGq-Vc-Rj1" id="gMB-6W-FKW"/>
+                        <outlet property="opponentHandPicker" destination="hYE-Dp-AqH" id="2Bt-xq-edX"/>
+                        <outlet property="playerHandPicker" destination="dse-RT-03H" id="53i-Im-XNe"/>
+                        <outlet property="startGameButton" destination="Uq0-eD-b1h" id="qD9-gx-OmZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNK-it-nLz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2516" y="1438"/>
         </scene>
     </scenes>
     <resources>

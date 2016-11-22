@@ -13,6 +13,7 @@
 		7F357D1A1DE13AA200A2D769 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F357D161DE13AA200A2D769 /* State.swift */; };
 		7F357D1C1DE35D2000A2D769 /* DifficultyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F357D1B1DE35D2000A2D769 /* DifficultyTableViewController.swift */; };
 		7F357D1E1DE38C1600A2D769 /* OrderSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F357D1D1DE38C1600A2D769 /* OrderSelectViewController.swift */; };
+		7F357D201DE4C17600A2D769 /* vsCPUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F357D1F1DE4C17600A2D769 /* vsCPUViewController.swift */; };
 		7F7DDC7D1DD2B308001033FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7DDC7C1DD2B308001033FF /* AppDelegate.swift */; };
 		7F7DDC7F1DD2B308001033FF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7DDC7E1DD2B308001033FF /* FirstViewController.swift */; };
 		7F7DDC811DD2B308001033FF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7DDC801DD2B308001033FF /* SecondViewController.swift */; };
@@ -44,6 +45,7 @@
 		7F357D161DE13AA200A2D769 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		7F357D1B1DE35D2000A2D769 /* DifficultyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DifficultyTableViewController.swift; sourceTree = "<group>"; };
 		7F357D1D1DE38C1600A2D769 /* OrderSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSelectViewController.swift; sourceTree = "<group>"; };
+		7F357D1F1DE4C17600A2D769 /* vsCPUViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vsCPUViewController.swift; sourceTree = "<group>"; };
 		7F7DDC791DD2B308001033FF /* proyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7DDC7C1DD2B308001033FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F7DDC7E1DD2B308001033FF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +60,7 @@
 		AF78B7641DDB8AD600BBFA37 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		AF78B7661DDB8E3100BBFA37 /* BJ.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BJ.jpeg; sourceTree = "<group>"; };
 		AF8307A51DDF7E5A0001781F /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
-		AF8307A71DDF81BB0001781F /* PlayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerTableViewController.swift; path = ../PlayerTableViewController.swift; sourceTree = "<group>"; };
+		AF8307A71DDF81BB0001781F /* PlayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewController.swift; sourceTree = "<group>"; };
 		AF8307A91DDF83F90001781F /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				7F7DDC7B1DD2B308001033FF /* proyectoFinal */,
+				AF8307A71DDF81BB0001781F /* PlayerTableViewController.swift */,
 				7F7DDC921DD2B309001033FF /* proyectoFinalTests */,
 				7F7DDC7A1DD2B308001033FF /* Products */,
 			);
@@ -101,7 +104,6 @@
 		7F7DDC7B1DD2B308001033FF /* proyectoFinal */ = {
 			isa = PBXGroup;
 			children = (
-				AF8307A71DDF81BB0001781F /* PlayerTableViewController.swift */,
 				AF78B7661DDB8E3100BBFA37 /* BJ.jpeg */,
 				7F7DDC7C1DD2B308001033FF /* AppDelegate.swift */,
 				AF78B7641DDB8AD600BBFA37 /* MenuViewController.swift */,
@@ -119,6 +121,7 @@
 				7F357D161DE13AA200A2D769 /* State.swift */,
 				7F357D1B1DE35D2000A2D769 /* DifficultyTableViewController.swift */,
 				7F357D1D1DE38C1600A2D769 /* OrderSelectViewController.swift */,
+				7F357D1F1DE4C17600A2D769 /* vsCPUViewController.swift */,
 			);
 			path = proyectoFinal;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				7F7DDC7D1DD2B308001033FF /* AppDelegate.swift in Sources */,
 				AF78B7651DDB8AD600BBFA37 /* MenuViewController.swift in Sources */,
 				7F357D1A1DE13AA200A2D769 /* State.swift in Sources */,
+				7F357D201DE4C17600A2D769 /* vsCPUViewController.swift in Sources */,
 				7F357D1E1DE38C1600A2D769 /* OrderSelectViewController.swift in Sources */,
 				7F357D181DE13AA200A2D769 /* ProbabilisticNode.swift in Sources */,
 				AF8307A61DDF7E5A0001781F /* PlayerTableViewCell.swift in Sources */,

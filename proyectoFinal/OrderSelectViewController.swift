@@ -44,14 +44,23 @@ class OrderSelectViewController: UIViewController, UIPickerViewDelegate, UIPicke
         return orders[row];
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
+        let destination = segue.destination as! vsCPUViewController
         // Pass the selected object to the new view controller.
+        destination.estado.heuristic = self.heuristic
+        let index = orderPicker.selectedRow(inComponent: 0)
+        if index == 0 {
+            destination.estado.turn = false
+        }
+        else{
+            destination.estado.turn = true
+        }
     }
-    */
+    
 
 }
