@@ -13,9 +13,9 @@ class State: NSObject, NSCopying {
     var playerHand = [Card]()
     var opponentHand = [Card]()
     var callFlag = false
-    var deckSize = 0
-    var numbersPlayed = [0,0,0,0,0,0,0,0,0,0,0,0] //Arreglo que guarda las cartas que han sido jugadas.
-    var probabilityArray = [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0] //Arreglo que guarda las probabilidades de sacar cartas con un valor particular.
+    var deckSize : Int = 0
+    var numbersPlayed : Array = [0,0,0,0,0,0,0,0,0,0,0,0] //Arreglo que guarda las cartas que han sido jugadas.
+    var probabilityArray : Array = [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0] //Arreglo que guarda las probabilidades de sacar cartas con un valor particular.
     var heuristic = 0
     var turn = true
     var prob = 0.0
@@ -82,6 +82,7 @@ class State: NSObject, NSCopying {
         }
         print(probabilityArray)
         print(totalProb)
+        print(deckSize)
     }
     
     func reset(){
@@ -115,6 +116,7 @@ class State: NSObject, NSCopying {
             }
             newState.prob = probabilityArray[i]
             childStates.append(newState)
+            //newState.deckSize += 1
         }
         /*newState = baseState.copy() as! State
         newState.call()
@@ -148,12 +150,15 @@ class State: NSObject, NSCopying {
         }
         if aces > 0 {
             for _ in 1...aces {
-                if (value + 11) <= 21 {
+                let checkVal = value + 11
+                print("checkVal = \(checkVal)")
+                if checkVal <= 21 {
                     value += 11
                 }
                 else{
                     value += 1
                 }
+                print("value = \(value)")
             }
         }
         return value
@@ -181,14 +186,14 @@ class State: NSObject, NSCopying {
         if playerValue == 21 {
             return 21
         }
+        if opponentValue > 21{
+            return 21
+        }
         if playerValue > 21 {
             return -21
         }
         if opponentValue == 21 {
             return -21
-        }
-        if opponentValue > 21{
-            return 21
         }
         return 0
     }
@@ -218,6 +223,14 @@ class State: NSObject, NSCopying {
             let opponentValue = getHandValue(hand: newOpponentHand)
             retVal = playerValue - opponentValue
         }
+        if callFlag {
+            if retVal >= 0 {
+                retVal = 21
+            }
+            else{
+                retVal = -21
+            }
+        }
         return retVal
     }
     
@@ -242,6 +255,14 @@ class State: NSObject, NSCopying {
         var retValue = checkDefaultWinner(playerValue: playerValue, opponentValue: Int(opponentValue))
         if retValue == 0 {
             retValue = playerValue - Int(opponentValue)
+        }
+        if callFlag {
+            if retValue >= 0 {
+                retValue = 21
+            }
+            else{
+                retValue = -21
+            }
         }
         return retValue
     }
@@ -291,13 +312,14 @@ class State: NSObject, NSCopying {
     
     func copy(with zone: NSZone? = nil) -> Any {
         let newCopy = State()
-        newCopy.setDeckSize(size: self.deckSize)
         for card in self.playerHand {
             newCopy.addToPlayerHand(card: card.copy() as! Card)
         }
         for card in self.opponentHand {
             newCopy.addToOpponentHand(card: card.copy() as! Card)
         }
+        newCopy.deckSize = self.deckSize
+        newCopy.numbersPlayed = self.numbersPlayed
         return newCopy
     }
     

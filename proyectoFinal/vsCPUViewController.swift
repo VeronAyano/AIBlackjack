@@ -161,7 +161,7 @@ class vsCPUViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         return card
     }
     
-    func getHandValue(hand:[Card]) -> Int {
+    /*func getHandValue(hand:[Card]) -> Int {
         var aces = 0
         var value = 0
         for card in hand{
@@ -183,10 +183,10 @@ class vsCPUViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
             }
         }
         return value
-    }
+    }*/
     
     func checkDefaultWinner() -> Bool {
-        let playerValue = getHandValue(hand: estado.playerHand)
+        let playerValue = estado.getHandValue(hand: estado.playerHand)
         if playerValue == 21 {
             playerWins()
             return true
@@ -195,7 +195,7 @@ class vsCPUViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
             opponentWins()
             return true
         }
-        let opponentValue = getHandValue(hand: estado.opponentHand)
+        let opponentValue = estado.getHandValue(hand: estado.opponentHand)
         if opponentValue == 21 {
             opponentWins()
             return true
@@ -238,7 +238,7 @@ class vsCPUViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     }
     
     func firstHeuristic() -> Int {
-        let playerValue = getHandValue(hand: estado.playerHand)
+        let playerValue = estado.getHandValue(hand: estado.playerHand)
         var newOpponentHand = [Card]()
         for card in estado.opponentHand{
             if card.visible {
@@ -257,12 +257,12 @@ class vsCPUViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         }
         let newCard = Card(cardName: cardTypes[index], isVisible: true)
         newOpponentHand.append(newCard)
-        let opponentValue = getHandValue(hand: newOpponentHand)
+        let opponentValue = estado.getHandValue(hand: newOpponentHand)
         return playerValue - opponentValue
     }
     
     func secondHeuristic() -> Int {
-        let playerValue = getHandValue(hand: estado.playerHand)
+        let playerValue = estado.getHandValue(hand: estado.playerHand)
         var newOpponentHand = [Card]()
         for card in estado.opponentHand{
             if card.visible {
@@ -276,7 +276,7 @@ class vsCPUViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
             var tempOpHand = [Card]()
             tempOpHand.append(contentsOf: newOpponentHand)
             tempOpHand.append(newCard)
-            let tempValue = getHandValue(hand: tempOpHand)
+            let tempValue = estado.getHandValue(hand: tempOpHand)
             opponentValue += (Double(tempValue) * estado.probabilityArray[i])
         }
         return playerValue - Int(opponentValue)
@@ -323,6 +323,7 @@ class vsCPUViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     func hitOpponent() {
         estado.addToPlayerHand(card: drawCard())
         hitButton.isEnabled = true
+        callButton.isEnabled = true
         playerHandPicker.reloadAllComponents()
         opponentHandPicker.reloadAllComponents()
         if !checkDefaultWinner(){
@@ -331,14 +332,20 @@ class vsCPUViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     }
     
     @IBAction func resetGame(_ sender: UIButton) {
+        estado.resetProbabilities()
         for card in estado.playerHand{
+            card.visible = true
+            estado.cardPlayed(card: card)
             discardPile.append(card)
         }
         for card in estado.opponentHand{
+            card.visible = true
+            estado.cardPlayed(card: card)
             discardPile.append(card)
         }
         estado.playerHand = [Card]()
         estado.opponentHand = [Card]()
+        estado.deckSize = deck.count
         hitButton.isEnabled = false
         callButton.isEnabled = false
         startGameButton.isEnabled = true
@@ -353,8 +360,8 @@ class vsCPUViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     }
     
     func doCall() {
-        let playerValue = getHandValue(hand: estado.playerHand)
-        let opponentValue = getHandValue(hand: estado.opponentHand)
+        let playerValue = estado.getHandValue(hand: estado.playerHand)
+        let opponentValue = estado.getHandValue(hand: estado.opponentHand)
         if playerValue >= opponentValue {
             playerWins()
         }
@@ -389,12 +396,14 @@ class vsCPUViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         }
         state.setNodeValue()
         print("D0, Value = \(state.minMaxValue)")
-        if state.minMaxValue == state.children[0].value {
-            hitOpponent()
-        }
-        else{
+        print("\(state.getHandValue(hand: state.playerHand))")
+        if state.minMaxValue == state.children[1].value {
             doCall()
         }
+        else{
+            hitOpponent()
+        }
+        
     }
 
 }
