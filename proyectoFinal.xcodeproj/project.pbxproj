@@ -21,6 +21,8 @@
 		7F7DDC861DD2B309001033FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7DDC851DD2B308001033FF /* Assets.xcassets */; };
 		7F7DDC891DD2B309001033FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7DDC871DD2B309001033FF /* LaunchScreen.storyboard */; };
 		7F7DDC941DD2B309001033FF /* proyectoFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7DDC931DD2B309001033FF /* proyectoFinalTests.swift */; };
+		7FA7F47C1DE60A31002C3AC9 /* proyectoFinal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7F47A1DE60A31002C3AC9 /* proyectoFinal.xcdatamodeld */; };
+		7FA7F4AD1DE60C02002C3AC9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7F4AC1DE60C02002C3AC9 /* CoreDataStack.swift */; };
 		AF78B7651DDB8AD600BBFA37 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF78B7641DDB8AD600BBFA37 /* MenuViewController.swift */; };
 		AF78B7671DDB8E3100BBFA37 /* BJ.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AF78B7661DDB8E3100BBFA37 /* BJ.jpeg */; };
 		AF8307A61DDF7E5A0001781F /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8307A51DDF7E5A0001781F /* PlayerTableViewCell.swift */; };
@@ -57,6 +59,8 @@
 		7F7DDC8F1DD2B309001033FF /* proyectoFinalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = proyectoFinalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7DDC931DD2B309001033FF /* proyectoFinalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proyectoFinalTests.swift; sourceTree = "<group>"; };
 		7F7DDC951DD2B309001033FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FA7F47B1DE60A31002C3AC9 /* proyectoFinal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = proyectoFinal.xcdatamodel; sourceTree = "<group>"; };
+		7FA7F4AC1DE60C02002C3AC9 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		AF78B7641DDB8AD600BBFA37 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		AF78B7661DDB8E3100BBFA37 /* BJ.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BJ.jpeg; sourceTree = "<group>"; };
 		AF8307A51DDF7E5A0001781F /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 				7F357D1B1DE35D2000A2D769 /* DifficultyTableViewController.swift */,
 				7F357D1D1DE38C1600A2D769 /* OrderSelectViewController.swift */,
 				7F357D1F1DE4C17600A2D769 /* vsCPUViewController.swift */,
+				7FA7F47A1DE60A31002C3AC9 /* proyectoFinal.xcdatamodeld */,
+				7FA7F4AC1DE60C02002C3AC9 /* CoreDataStack.swift */,
 			);
 			path = proyectoFinal;
 			sourceTree = "<group>";
@@ -241,11 +247,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F7DDC811DD2B308001033FF /* SecondViewController.swift in Sources */,
+				7FA7F47C1DE60A31002C3AC9 /* proyectoFinal.xcdatamodeld in Sources */,
 				7F7DDC7D1DD2B308001033FF /* AppDelegate.swift in Sources */,
 				AF78B7651DDB8AD600BBFA37 /* MenuViewController.swift in Sources */,
 				7F357D1A1DE13AA200A2D769 /* State.swift in Sources */,
 				7F357D201DE4C17600A2D769 /* vsCPUViewController.swift in Sources */,
 				7F357D1E1DE38C1600A2D769 /* OrderSelectViewController.swift in Sources */,
+				7FA7F4AD1DE60C02002C3AC9 /* CoreDataStack.swift in Sources */,
 				7F357D181DE13AA200A2D769 /* ProbabilisticNode.swift in Sources */,
 				AF8307A61DDF7E5A0001781F /* PlayerTableViewCell.swift in Sources */,
 				7F7DDC7F1DD2B308001033FF /* FirstViewController.swift in Sources */,
@@ -475,6 +483,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7FA7F47A1DE60A31002C3AC9 /* proyectoFinal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7FA7F47B1DE60A31002C3AC9 /* proyectoFinal.xcdatamodel */,
+			);
+			currentVersion = 7FA7F47B1DE60A31002C3AC9 /* proyectoFinal.xcdatamodel */;
+			path = proyectoFinal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7F7DDC711DD2B308001033FF /* Project object */;
 }
