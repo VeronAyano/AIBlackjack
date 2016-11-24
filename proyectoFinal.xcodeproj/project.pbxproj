@@ -23,6 +23,8 @@
 		7F7DDC941DD2B309001033FF /* proyectoFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7DDC931DD2B309001033FF /* proyectoFinalTests.swift */; };
 		7FA7F47C1DE60A31002C3AC9 /* proyectoFinal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7F47A1DE60A31002C3AC9 /* proyectoFinal.xcdatamodeld */; };
 		7FA7F4AD1DE60C02002C3AC9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7F4AC1DE60C02002C3AC9 /* CoreDataStack.swift */; };
+		7FA7F4B61DE621B4002C3AC9 /* Player+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7F4B41DE621B4002C3AC9 /* Player+CoreDataClass.swift */; };
+		7FA7F4B71DE621B4002C3AC9 /* Player+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7F4B51DE621B4002C3AC9 /* Player+CoreDataProperties.swift */; };
 		AF78B7651DDB8AD600BBFA37 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF78B7641DDB8AD600BBFA37 /* MenuViewController.swift */; };
 		AF78B7671DDB8E3100BBFA37 /* BJ.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AF78B7661DDB8E3100BBFA37 /* BJ.jpeg */; };
 		AF8307A61DDF7E5A0001781F /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8307A51DDF7E5A0001781F /* PlayerTableViewCell.swift */; };
@@ -61,10 +63,13 @@
 		7F7DDC951DD2B309001033FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FA7F47B1DE60A31002C3AC9 /* proyectoFinal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = proyectoFinal.xcdatamodel; sourceTree = "<group>"; };
 		7FA7F4AC1DE60C02002C3AC9 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		7FA7F4B41DE621B4002C3AC9 /* Player+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7FA7F4B51DE621B4002C3AC9 /* Player+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7FA7F4B81DE63EB0002C3AC9 /* proyectoFinal 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "proyectoFinal 2.xcdatamodel"; sourceTree = "<group>"; };
 		AF78B7641DDB8AD600BBFA37 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		AF78B7661DDB8E3100BBFA37 /* BJ.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BJ.jpeg; sourceTree = "<group>"; };
 		AF8307A51DDF7E5A0001781F /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
-		AF8307A71DDF81BB0001781F /* PlayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewController.swift; sourceTree = "<group>"; };
+		AF8307A71DDF81BB0001781F /* PlayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerTableViewController.swift; path = ../PlayerTableViewController.swift; sourceTree = "<group>"; };
 		AF8307A91DDF83F90001781F /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,8 +94,9 @@
 		7F7DDC701DD2B308001033FF = {
 			isa = PBXGroup;
 			children = (
+				7FA7F4B41DE621B4002C3AC9 /* Player+CoreDataClass.swift */,
+				7FA7F4B51DE621B4002C3AC9 /* Player+CoreDataProperties.swift */,
 				7F7DDC7B1DD2B308001033FF /* proyectoFinal */,
-				AF8307A71DDF81BB0001781F /* PlayerTableViewController.swift */,
 				7F7DDC921DD2B309001033FF /* proyectoFinalTests */,
 				7F7DDC7A1DD2B308001033FF /* Products */,
 			);
@@ -108,6 +114,7 @@
 		7F7DDC7B1DD2B308001033FF /* proyectoFinal */ = {
 			isa = PBXGroup;
 			children = (
+				AF8307A71DDF81BB0001781F /* PlayerTableViewController.swift */,
 				AF78B7661DDB8E3100BBFA37 /* BJ.jpeg */,
 				7F7DDC7C1DD2B308001033FF /* AppDelegate.swift */,
 				AF78B7641DDB8AD600BBFA37 /* MenuViewController.swift */,
@@ -248,6 +255,7 @@
 			files = (
 				7F7DDC811DD2B308001033FF /* SecondViewController.swift in Sources */,
 				7FA7F47C1DE60A31002C3AC9 /* proyectoFinal.xcdatamodeld in Sources */,
+				7FA7F4B71DE621B4002C3AC9 /* Player+CoreDataProperties.swift in Sources */,
 				7F7DDC7D1DD2B308001033FF /* AppDelegate.swift in Sources */,
 				AF78B7651DDB8AD600BBFA37 /* MenuViewController.swift in Sources */,
 				7F357D1A1DE13AA200A2D769 /* State.swift in Sources */,
@@ -257,6 +265,7 @@
 				7F357D181DE13AA200A2D769 /* ProbabilisticNode.swift in Sources */,
 				AF8307A61DDF7E5A0001781F /* PlayerTableViewCell.swift in Sources */,
 				7F7DDC7F1DD2B308001033FF /* FirstViewController.swift in Sources */,
+				7FA7F4B61DE621B4002C3AC9 /* Player+CoreDataClass.swift in Sources */,
 				AF8307AA1DDF83F90001781F /* Player.swift in Sources */,
 				7F357D1C1DE35D2000A2D769 /* DifficultyTableViewController.swift in Sources */,
 				AF8307A81DDF81BB0001781F /* PlayerTableViewController.swift in Sources */,
@@ -488,9 +497,10 @@
 		7FA7F47A1DE60A31002C3AC9 /* proyectoFinal.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				7FA7F4B81DE63EB0002C3AC9 /* proyectoFinal 2.xcdatamodel */,
 				7FA7F47B1DE60A31002C3AC9 /* proyectoFinal.xcdatamodel */,
 			);
-			currentVersion = 7FA7F47B1DE60A31002C3AC9 /* proyectoFinal.xcdatamodel */;
+			currentVersion = 7FA7F4B81DE63EB0002C3AC9 /* proyectoFinal 2.xcdatamodel */;
 			path = proyectoFinal.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

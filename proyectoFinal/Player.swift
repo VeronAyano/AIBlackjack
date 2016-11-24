@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Player: NSObject , NSCoding  {
+class oldPlayer: NSObject , NSCoding  {
    /* var name: String = ""
     var lugar: String = ""
     var saludos: String = ""
