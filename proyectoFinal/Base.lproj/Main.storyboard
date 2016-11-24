@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="teR-VN-ipc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="teR-VN-ipc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -97,7 +97,7 @@
                                 <rect key="frame" x="0.0" y="122" width="375" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="gNY-Yq-K0S" id="LtT-ky-AFS">
-                                    <frame key="frameInset" width="375" height="149"/>
+                                    <frame key="frameInset" width="375" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bng-MH-s0P">
@@ -241,7 +241,7 @@
             </objects>
             <point key="canvasLocation" x="3376.8000000000002" y="-734.48275862068976"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Mapas y Core Data-->
         <scene sceneID="Dok-Om-zaQ">
             <objects>
                 <tableViewController id="MY8-dd-jUk" sceneMemberID="viewController">
@@ -254,7 +254,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lXa-Cr-tlP" id="yIz-Wt-g1z">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -264,11 +264,47 @@
                             <outlet property="delegate" destination="MY8-dd-jUk" id="hC9-ya-xJm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="0Fv-xF-s1D"/>
+                    <navigationItem key="navigationItem" title="Mapas y Core Data" id="0Fv-xF-s1D">
+                        <barButtonItem key="rightBarButtonItem" title="Mapas" id="gCy-8o-c5E">
+                            <connections>
+                                <segue destination="fDN-cl-eos" kind="show" id="XrC-dA-7UD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JE9-Hu-tK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1842" y="-42"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="XXz-WI-aY7">
+            <objects>
+                <viewController id="fDN-cl-eos" customClass="MapViewController" customModule="proyectoFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TYz-ag-Zyd"/>
+                        <viewControllerLayoutGuide type="bottom" id="awX-ZM-MPx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x9M-VC-M92">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lUB-Yd-Mbu"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lUB-Yd-Mbu" firstAttribute="top" secondItem="TYz-ag-Zyd" secondAttribute="bottom" constant="8" symbolic="YES" id="EOg-ry-47c"/>
+                            <constraint firstItem="lUB-Yd-Mbu" firstAttribute="leading" secondItem="x9M-VC-M92" secondAttribute="leadingMargin" id="adQ-Ca-A65"/>
+                            <constraint firstItem="lUB-Yd-Mbu" firstAttribute="trailing" secondItem="x9M-VC-M92" secondAttribute="trailingMargin" id="afK-t2-b9s"/>
+                            <constraint firstItem="awX-ZM-MPx" firstAttribute="top" secondItem="lUB-Yd-Mbu" secondAttribute="bottom" constant="276" id="aht-Bh-kpH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="lUB-Yd-Mbu" id="JKt-YU-9wR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ZS-JK-tsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2756" y="-35.532233883058474"/>
         </scene>
         <!--Stats-->
         <scene sceneID="bkw-en-jo0">
